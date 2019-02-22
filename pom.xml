@@ -12,7 +12,7 @@
 	<artifactId>pet-clinic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pet-clinic</name>
-	<description>pet Clinic Project</description>
+	<description>Pet Clinic Project</description>
 
 	<properties>
 		<java.version>10</java.version>
