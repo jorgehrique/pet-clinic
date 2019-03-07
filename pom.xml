@@ -13,15 +13,17 @@
 		<version>2.2.0.BUILD-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.spring</groupId>
 	<artifactId>pet-clinic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<name>pet-clinic</name>
 	<description>Pet Clinic Project</description>
 
 	<properties>
 		<java.version>10</java.version>
-		<start-class>spc.PetClinicApplication</start-class>
+		<start-class>petclinic.PetClinicApplication</start-class>
 	</properties>
 
 	<build>
@@ -30,8 +32,20 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+
+	<scm>
+		<developerConnection>scm:git:git@github.com:jorgehrique/pet-clinic.git</developerConnection>
+	</scm>
 
 	<repositories>
 		<repository>
